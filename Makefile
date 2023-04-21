@@ -1,4 +1,4 @@
-.PHONY: dev build stop down up curl image
+.PHONY: dev build stop down up curl image nextjs
 
 dev:
 	docker-compose up -d db
@@ -16,3 +16,5 @@ golang:
 	docker-compose exec go /bin/sh
 mysql:
 	docker-compose exec db /bin/sh -c 'mysql -u root -p'
+nextjs:
+	cd frontend && yarn run dev
