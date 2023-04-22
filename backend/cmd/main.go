@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	"unichat/config"
+	"unicareer/config"
 
 	"github.com/labstack/echo"
 )

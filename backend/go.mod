@@ -1,4 +1,4 @@
-module unichat
+module unicareer
 
 go 1.19
 
