@@ -1,7 +1,9 @@
+import TopicList from '@/features/Topics/TopicList';
 
 export default function Home() {
   return (
-    <main className="">
-    </main>
+    <div className="p-3 flex flex-col items-center justify-center">
+      <TopicList />
+    </div>
   )
 }
