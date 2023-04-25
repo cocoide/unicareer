@@ -13,7 +13,7 @@ const Header = () => {
             <div className="flex items-center justify-center space-x-5">
                 {/* Avatar Button*/}
                 <NotificationModal />
-                <Avatar name="かずき" size="sm" className='hidden md:flex' />
+                {/* <Avatar name="かずき" size="sm" className='hidden md:inline-block' /> */}
             </div>
         </div>
     )
