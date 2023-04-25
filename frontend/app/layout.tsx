@@ -1,6 +1,6 @@
-import '../styles/globals.css'
 import Header from '@/components/Layouts/Header/Header'
 import ChakraUIProvider from '@/components/Providers/ChakraUIProvider'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Unicareer',
