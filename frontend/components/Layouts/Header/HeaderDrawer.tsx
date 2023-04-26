@@ -1,6 +1,6 @@
 "use client"
 
-import { DrawerBody, DrawerCloseButton, DrawerFooter, DrawerHeader, DrawerOverlay, useDisclosure, Drawer, DrawerContent } from '@chakra-ui/react'
+import { Drawer, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, useDisclosure } from '@chakra-ui/react'
 import { Bars3BottomLeftIcon } from '@heroicons/react/24/outline'
 import { useRef } from 'react'
 import HeaderDrawerContent from './HeaderDrawerContent'
@@ -27,9 +27,9 @@ const HeaderDrawer = () => {
                     <DrawerHeader>
                     </DrawerHeader>
 
-                    <DrawerBody>
+                    {/* <DrawerBody> */}
                         <HeaderDrawerContent />
-                    </DrawerBody>
+                    {/* </DrawerBody> */}
 
                     <DrawerFooter>
                     </DrawerFooter>
