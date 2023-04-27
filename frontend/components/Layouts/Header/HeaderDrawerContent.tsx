@@ -1,15 +1,17 @@
 "use client"
-import { Avatar, AvatarGroup, Box, Image, Stack } from '@chakra-ui/react'
-import { LockClosedIcon } from '@heroicons/react/24/solid'
+import { Avatar, AvatarGroup, Box, HStack, Image, Stack, Tag } from '@chakra-ui/react'
+import { Cog6ToothIcon, QuestionMarkCircleIcon, UserIcon } from '@heroicons/react/24/outline'
 
 const HeaderDrawerContent = () => {
     return (
         <div className="flex flex-col w-full">
-            <div className="p-2">
-                <Box w='100%' color='white' borderRadius="lg" className='bg-neutral p-3'>
-                <div className="font-bold flex items-center justify-center"><LockClosedIcon className='w-5 h-5' /> ログイン</div>
+            <Box w='100%' color='white' className=' text-gray-500'>
+                <Stack direction='row' justify={"space-between"} placeItems={"center"} px={10} py={4}>
+                    <UserIcon className='text-primary w-5 h-5' />
+                    <QuestionMarkCircleIcon className='text-primary w-5 h-5' />
+                    <Cog6ToothIcon className='text-primary w-5 h-5' />
+                </Stack>
             </Box>
-            </div>
             <Stack direction='row' justify={"space-between"} placeItems={"center"} p={3}>
                 <div className="text-gray-400 text-sm">コミュニティリスト（3）</div>
                 <div className="text-primary text-sm">管理</div>
@@ -57,7 +59,24 @@ const HeaderDrawerContent = () => {
                     </Stack>
                 </Stack>
             </Box>
+
+            <Stack direction='row' justify={"space-between"} placeItems={"center"} p={3}>
+                <div className="text-gray-400 text-sm">興味のあるトピック（5）</div>
+                <div className="text-primary text-sm">設定</div>
+            </Stack>
+            <HStack spacing={4} placeItems={"center"} p={3} >
+
+                {interests.map(interest => (
+                    <Tag key={interest.title} color={"white"} bg={"gray.500"}>{interest.title}</Tag>
+                ))}
+            </HStack>
         </div>
     )
 }
 export default HeaderDrawerContent
+
+const interests = [
+    { id: "4", title: "メガベン", },
+    { id: "3", title: "コンサル", },
+    { id: "2", title: "〇〇会社", },
+]
