@@ -1,7 +1,7 @@
 "use client"
-import { Avatar } from '@chakra-ui/react'
-import HeaderDrawer from './HeaderDrawer'
-import NotificationModal from './NotificationModal'
+import HeaderDrawer from './components/HeaderDrawer'
+import { NotificationPopver } from './components/NotificationPopver'
+
 
 const Header = () => {
     return (
@@ -12,7 +12,7 @@ const Header = () => {
             >みんなのキャリア</div>
             <div className="flex items-center justify-center space-x-5">
                 {/* Avatar Button*/}
-                <NotificationModal />
+                <NotificationPopver />
                 {/* <Avatar name="かずき" size="sm" className='hidden md:inline-block' /> */}
             </div>
         </div>

@@ -1,4 +1,5 @@
-import Header from '@/components/Layouts/Header/Header'
+import Header from '@/components/Layouts/Header'
+import Navigation from '@/components/Layouts/Mobile/Navigation'
 import ChakraUIProvider from '@/components/Providers/ChakraUIProvider'
 import '../styles/globals.css'
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: LaytoutChildren) {
         <ChakraUIProvider>
         <Header />
         {children}
+        <Navigation/>
         </ChakraUIProvider>
       </body>
     </html>

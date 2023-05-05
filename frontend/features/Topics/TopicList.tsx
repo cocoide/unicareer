@@ -1,7 +1,6 @@
 "use client"
-import { Avatar } from '@chakra-ui/react'
-import { ChatBubbleOvalLeftEllipsisIcon, HeartIcon } from '@heroicons/react/24/outline'
-import { AtSymbolIcon } from '@heroicons/react/24/solid'
+import { Avatar, Link } from '@chakra-ui/react'
+import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/outline'
 
 const topics = [
   { id: "1", title: "とりあえずホワイトな仕事", author: "かずき" },
@@ -26,11 +25,10 @@ const TopicList = () => {
 
           <div className="flex flex-row justify-between items-center p-2 w-full">
             <div className="flex flex-row space-x-3 items-center">
-              <HeartIcon className="h-7 w-7"></HeartIcon>
-              <ChatBubbleOvalLeftEllipsisIcon className="h-7 w-7"></ChatBubbleOvalLeftEllipsisIcon>
+              <Link href='' className="text-gray-500">〇〇件の回答</Link>
             </div>
-            <button className="bg-primary rounded-md p-1 text-white flex items-center">
-              <AtSymbolIcon className='h-4 w-4 text-white' /> 話したい</button>
+            <button className="bg-gray-400 rounded-md p-1 text-white flex items-center ">
+              <ChatBubbleOvalLeftEllipsisIcon className='h-4 w-4 text-white' /> 回答する</button>
           </div>
         </div>
       ))}
