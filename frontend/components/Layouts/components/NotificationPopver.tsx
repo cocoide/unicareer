@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Divider, Popover, PopoverArrow, PopoverBody, PopoverContent, PopoverTrigger, VStack } from '@chakra-ui/react'
+import { Divider, Popover, PopoverArrow, PopoverBody, PopoverContent, PopoverTrigger, VStack } from '@chakra-ui/react'
 import { BellIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
@@ -8,9 +8,9 @@ export const NotificationPopver = () => {
     return (
         <Popover>
             <PopoverTrigger>
-                <Button  p="1" rounded="full" variant="ghost" >
-                    <BellIcon className='text-gray-400' />
-                </Button>
+                <button>
+                    <BellIcon className='w-7 h-7 text-gray-400' />
+                </button>
             </PopoverTrigger>
             <PopoverContent marginX={3} width={250} shadow={"md"}>
                 <PopoverArrow />
