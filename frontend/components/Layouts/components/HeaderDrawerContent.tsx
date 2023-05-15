@@ -1,17 +1,9 @@
 "use client"
 import { Avatar, AvatarGroup, Box, HStack, Image, Stack, Tag } from '@chakra-ui/react'
-import { Cog6ToothIcon, QuestionMarkCircleIcon, UserIcon } from '@heroicons/react/24/outline'
 
 const HeaderDrawerContent = () => {
     return (
         <div className="flex flex-col w-full">
-            <Box w='100%' color='white' className=' text-gray-500'>
-                <Stack direction='row' justify={"space-between"} placeItems={"center"} px={10} py={4}>
-                    <UserIcon className='text-primary w-5 h-5' />
-                    <QuestionMarkCircleIcon className='text-primary w-5 h-5' />
-                    <Cog6ToothIcon className='text-primary w-5 h-5' />
-                </Stack>
-            </Box>
             <Stack direction='row' justify={"space-between"} placeItems={"center"} p={3}>
                 <div className="text-gray-400 text-sm">コミュニティリスト（3）</div>
                 <div className="text-primary text-sm">管理</div>
